@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Exchange Rate Converter</title>
+    <link rel="stylesheet" href="../static/css/style.css" >
+  </head>
+  <body>
+    <h1>Exchange Rate Converter</h1>
+    {% if error %}
+    <div class="error">{{ error }}</div>
+    {% endif %}
+    <form action="/exchange_rate" method="GET">
+    <!-- <form> -->
+      <label for="base_currency">Base Currency:</label>
+      <input type="text" id="base_currency" name="base" placeholder="USD">
+      <span id="base_error" class="error"></span>
+      <br>
+      <label for="target_currency">Target Currency:</label>
+      <input type="text" id="target_currency" name="target" placeholder="EUR">
+      <span id="target_error" class="error"></span>
+      <br>
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" name="amount" placeholder="120">
+      <span id="amount_error" class="error"></span>
+      <br>
+      <input type="submit" value="Convert">
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>
