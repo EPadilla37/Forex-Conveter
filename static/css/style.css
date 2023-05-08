@@ -1,0 +1,82 @@
+
+.error {
+color: red;
+font-size: 0.8em;
+margin-top: 0.2em;
+}
+
+.input-error {
+border: 1px solid red;
+}
+
+
+body {
+    background-color: #f4f4f4;
+  }
+  
+.container {
+margin: 0 auto;
+padding: 20px;
+width: 600px;
+background-color: #fff;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+font-size: 32px;
+text-align: center;
+margin-bottom: 20px;
+}
+
+p {
+font-size: 30px;
+line-height: 1.5;
+}
+
+.result {
+display: flex;
+justify-content: space-between;
+margin-bottom: 10px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666666;
+  }
+
+  input[type="text"], input[type="number"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #336699;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #26527C;
+  }
